@@ -1,0 +1,293 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python" // "editor.tabSize": 4
+  },
+  // Code Spell Checker Extension
+  "cSpell.enableFiletypes": ["!dockercompose"],
+  "cSpell.language": "en,vi",
+  "cSpell.userWords": ["jsonify", "Vinh"],
+  //
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.sortImports": true
+  },
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": "JetBrains Mono",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.insertSpaces": true,
+  "editor.mouseWheelZoom": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.renderLineHighlight": "gutter",
+  "editor.smoothScrolling": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.preview": true,
+  "editor.suggestSelection": "first",
+  "editor.wordWrap": "on",
+  "explorer.experimental.fileNesting.enabled": true,
+  // "editor.linkedEditing": true
+  // "javascript.inlayHints.parameterNames.enabled": "all",
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\r\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  // Gruvbox Material Extension
+  "gruvboxMaterial.darkContrast": "soft",
+  "gruvboxMaterial.darkSelection": "purple",
+  "gruvboxMaterial.darkWorkbench": "flat",
+  //
+  // Highlight Matching Tag
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "highlight-matching-tag.showPath": false,
+  //
+  "html.autoClosingTags": true,
+  "html.format.endWithNewline": true,
+  // htmltagwrap Extension
+  "htmltagwrap.tag": "div",
+  //
+  // Incrementor Extension
+  "incrementor.enums.values": [
+    ["false", "true"],
+    ["let", "const"],
+    ["public", "private", "protected"],
+    ["top", "bottom"],
+    ["left", "right"],
+    ["relative", "absolute"],
+    ["true", "false"],
+    ["flex-start", "flex-end", "center"]
+  ],
+  //
+  // Indent one space Extension
+  "indentOneSpace.onlyCompleteRange": true,
+  //
+  "javascript.autoClosingTags": true,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "javascript.preferences.jsxAttributeCompletionStyle": "auto",
+  "javascript.suggest.autoImports": true,
+  "javascript.suggest.paths": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  //
+  "jupyter.askForKernelRestart": false,
+  "liveshare.launcherClient": "visualStudioCode",
+  // Local History Extension
+  "local-history.dateLocale": "vi-VN",
+  "local-history.daysLimit": 1,
+  "local-history.maxDisplay": 10,
+  "local-history.saveDelay": 600,
+  //
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "notebook.lineNumbers": "on",
+  "prettier.endOfLine": "crlf",
+  // Rewrap Extension
+  "rewrap.autoWrap.enabled": true,
+  "rewrap.autoWrap.notification": "text",
+  "rewrap.wrappingColumn": 80,
+  //
+  // statusbar-commands Extension
+  "statusbar_command.commands": [
+    {
+      "alignment": "left",
+      "color": "#EA6962",
+      "command": "editor.action.fontZoomReset",
+      "id": "reset-zoom",
+      "name": "Reset Font Zoom",
+      "priority": -1,
+      "text": "$(debug-restart)",
+      "tooltip": "Resest font zoom"
+    },
+    {
+      "alignment": "left",
+      "color": "#E78A4E",
+      "command": "workbench.action.openSettingsJson",
+      "id": "open-settings",
+      "name": "Open settings.json",
+      "priority": -2,
+      "text": "$(gear)",
+      "tooltip": "Open settings.json"
+    },
+    {
+      "alignment": "left",
+      "color": "#D8A657",
+      "command": "workbench.action.toggleSplitEditorInGroup",
+      "id": "split-group",
+      "name": "Split (Group)",
+      "priority": -3,
+      "text": "$(split-horizontal)",
+      "tooltip": "Split an editor without creating a new group"
+    },
+    {
+      "alignment": "left",
+      "color": "#A9B665",
+      "command": "center-editor-window.center",
+      "id": "better-align",
+      "name": "Center Editor Window (Extension)",
+      "priority": -4,
+      "text": "$(fold)",
+      "tooltip": "Centers your editor window at the current cursor position"
+    },
+    {
+      "alignment": "left",
+      "color": "#89B482",
+      "command": "sortJsObjectKeys.sortJsObjectKeys",
+      "id": "sort-object-keys",
+      "name": "Sort JS object keys (Extension)",
+      "priority": -5,
+      "text": "$(arrow-down)",
+      "tooltip": "Sort JS object keys (ascending)"
+    },
+    {
+      "alignment": "left",
+      "color": "#7DAEA3",
+      "command": "extension.changeCase.commands",
+      "id": "change-case",
+      "name": "Change Case (Extension)",
+      "priority": -6,
+      "text": "$(case-sensitive)",
+      "tooltip": "Quickly change the case of the current selection or current word"
+    },
+    {
+      "alignment": "left",
+      "color": "#EA6962",
+      "command": "editor.emmet.action.removeTag",
+      "id": "remove-tag",
+      "name": "Remove Tag (Emmet)",
+      "priority": -7,
+      "text": "$(trash)",
+      "tooltip": "Remove HTML tag"
+    },
+    {
+      "alignment": "left",
+      "color": "#D8A657",
+      "command": "extension.htmlTagWrap",
+      "filterLanguageId": "html|javascriptreact",
+      "id": "htmlwrap",
+      "name": "HTML Tag Wrap (Extension)",
+      "priority": -8,
+      "text": "$(tag)",
+      "tooltip": "Wraps selection in HTML tags"
+    }
+  ],
+  //
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  // TODO Highlight Extension
+  "todohighlight.defaultStyle": {
+    "backgroundColor": "#7DAEA3",
+    "before": {
+      "contentText": "",
+      "fontStyle": "normal"
+    },
+    "border": "1px solid #A9B665",
+    "borderRadius": "5px",
+    "color": "black",
+    "cursor": "pointer",
+    "isWholeLine": false,
+    "overviewRulerColor": "#7DAEA3"
+  },
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**"
+  ],
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": [
+    "WORKING:",
+    {
+      "backgroundColor": "#E78A4E",
+      "color": "black",
+      "overviewRulerColor": "#E78A4E",
+      "text": "BUG:"
+    },
+    {
+      "backgroundColor": "#A9B665",
+      "color": "black",
+      "overviewRulerColor": "#A9B665",
+      "text": "DONE:"
+    },
+    {
+      "backgroundColor": "#D8A657",
+      "color": "black",
+      "overviewRulerColor": "#D8A657",
+      "text": "NOTE:"
+    },
+    {
+      "backgroundColor": "#EA6962",
+      "color": "black",
+      "overviewRulerColor": "#EA6962",
+      "text": "TODO:"
+    }
+  ],
+  //
+  "typescript.autoClosingTags": true,
+  // WindiCSS IntelliSense Extension
+  "windicss.enableCodeFolding": true,
+  // "windicss.foldCount": 10,
+  "windicss.foldByLength": true,
+  "windicss.foldLength": 80,
+  //
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "workbench.colorCustomizations": {
+    "[Gruvbox Material Dark]": {
+      "editorLineNumber.activeForeground": "#D3869B",
+      "statusBarItem.remoteBackground": "#D3869B",
+      "statusBarItem.remoteForeground": "#242424",
+      "tab.activeBorderTop": "#D3869B"
+    }
+  },
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.experimental.layoutControl.enabled": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.list.smoothScrolling": true,
+  "workbench.productIconTheme": "fluent-icons"
+}

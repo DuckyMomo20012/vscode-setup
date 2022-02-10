@@ -1,0 +1,111 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+;",
+        "command": "incrementor.decrementByOne"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-incrementor.decrementByOne"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "incrementor.incrementByOne"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-incrementor.incrementByOne"
+    },
+    {
+        "key": "ctrl+alt+;",
+        "command": "incrementor.decrementByTen"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-incrementor.decrementByTen"
+    },
+    {
+        "key": "ctrl+alt+'",
+        "command": "incrementor.incrementByTen"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-incrementor.incrementByTen"
+    },
+    {
+        "key": "ctrl+shift+alt+;",
+        "command": "incrementor.decrementByTenth"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-incrementor.decrementByTenth"
+    },
+    {
+        "key": "ctrl+shift+alt+'",
+        "command": "incrementor.incrementByTenth"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "-incrementor.incrementByTenth"
+    },
+    {
+        "key": "alt+/",
+        "command": "extension.htmlTagWrap",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-extension.htmlTagWrap",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "-editor.togglequotes"
+    },
+    {
+        "key": "alt+'",
+        "command": "bracketeer.swapQuotes"
+    },
+    {
+        "key": "ctrl+shift+alt+;",
+        "command": "-bracketeer.swapQuotes"
+    },
+    {
+        "key": "alt+;",
+        "command": "bracketeer.swapBrackets"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "-bracketeer.swapBrackets"
+    },
+    {
+        "key": "alt+\\",
+        "command": "extension.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+r",
+        "command": "-extension.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+;",
+        "command": "bracketeer.removeBrackets"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "-bracketeer.removeBrackets"
+    },
+    {
+        "key": "shift+alt+'",
+        "command": "bracketeer.removeQuotes"
+    },
+    {
+        "key": "ctrl+shift+alt+'",
+        "command": "-bracketeer.removeQuotes"
+    },
+    {
+        "key": "alt+s",
+        "command": "-sortJsObjectKeys.sortJsObjectKeys"
+    }
+]
