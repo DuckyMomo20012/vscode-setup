@@ -1,7 +1,6 @@
 # My VSCode setup
 
 > NOTE: You should check [my keybinding settings](/assets/keybindings.json).
-> VSCode has many great built-in keybindings, I chose those that most comfortable
 
 ## 1. Featured extension list:
 
@@ -38,7 +37,7 @@
 <details>
 <summary>settings.json</summary>
 
-```jsonc
+```json
 {
   "statusbar_command.commands": [
     {
@@ -285,6 +284,23 @@ Or move it to panel view.
 ---
 
 ### 📦 **Center Editor Window** (kaiwood.center-editor-window):
+
+<details>
+<summary>Another way: keybindings.json</summary>
+
+```json
+[
+  {
+    "key": "alt+v",
+    "command": "cursorMove",
+    "args": {
+      "to": "viewPortCenter"
+    }
+  }
+]
+```
+
+</details>
 
 **Keyboard shortcut:** `Ctrl+L`
 
