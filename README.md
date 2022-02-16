@@ -1,5 +1,8 @@
 # My VSCode setup
 
+> NOTE: You should check [my keybinding settings](/assets/keybindings.json).
+> VSCode has many great built-in keybindings, I chose those that most comfortable
+
 ## 1. Featured extension list:
 
 ### 📦 🤌 (Recommend) **TabOut** (albert.TabOut):
@@ -35,12 +38,9 @@
 <details>
 <summary>settings.json</summary>
 
-```json
+```jsonc
 {
   "statusbar_command.commands": [
-    // To zoom font fast, I enable settings:
-    // {"editor.mouseWheelZoom": true,}
-    // but to reset font zoom is not easy.
     {
       "alignment": "left",
       "color": "#EA6962",
@@ -48,10 +48,9 @@
       "id": "reset-zoom",
       "name": "Reset Font Zoom",
       "priority": -1,
-      "text": "$(debug-restart)",
+      "text": "$(refresh)",
       "tooltip": "Resest font zoom"
     },
-    // Quickly open settings.json file.
     {
       "alignment": "left",
       "color": "#E78A4E",
@@ -62,7 +61,6 @@
       "text": "$(gear)",
       "tooltip": "Open settings.json"
     },
-    // From update 1.61, you can split editor in group.
     {
       "alignment": "left",
       "color": "#D8A657",
@@ -73,7 +71,6 @@
       "text": "$(split-horizontal)",
       "tooltip": "Split an editor without creating a new group"
     },
-    // Center editor window, I found it quite handy because I use thin cursor, it hard to track cursor.
     {
       "alignment": "left",
       "color": "#A9B665",
@@ -84,7 +81,6 @@
       "text": "$(fold)",
       "tooltip": "Centers your editor window at the current cursor position"
     },
-    // Sort JS object keys
     {
       "alignment": "left",
       "color": "#89B482",
@@ -92,42 +88,50 @@
       "id": "sort-object-keys",
       "name": "Sort JS object keys (Extension)",
       "priority": -5,
-      "text": "$(arrow-down)",
+      "text": "$(arrow-down)$(json)",
       "tooltip": "Sort JS object keys (ascending)"
     },
-    // Rarely use.
     {
       "alignment": "left",
       "color": "#7DAEA3",
-      "command": "extension.changeCase.commands",
-      "id": "change-case",
-      "name": "Change Case (Extension)",
+      "command": "editor.action.sortLinesAscending",
+      "id": "sort-line-ascending",
+      "name": "Sort Lines Ascending",
       "priority": -6,
-      "text": "$(case-sensitive)",
-      "tooltip": "Quickly change the case of the current selection or current word"
+      "text": "$(arrow-down)$(list-selection)",
+      "tooltip": "Sort Lines Ascending"
     },
-    // Don't have to manually remove HTML tag.
     {
       "alignment": "left",
       "color": "#EA6962",
-      "command": "editor.emmet.action.removeTag",
-      "id": "remove-tag",
-      "name": "Remove Tag (Emmet)",
+      "command": "extension.changeCase.commands",
+      "id": "change-case",
+      "name": "Change Case (Extension)",
       "priority": -7,
-      "text": "$(trash)",
+      "text": "$(wand)$(text-size)",
+      "tooltip": "Quickly change the case of the current selection or current word"
+    },
+    {
+      "alignment": "left",
+      "color": "#E78A4E",
+      "command": "editor.emmet.action.removeTag",
+      "filterLanguageId": "html|javascriptreact|markdown",
+      "id": "remove-tag",
+      "name": "Remove HTML Tag (Emmet)",
+      "priority": -8,
+      "text": "$(trash)$(code)",
       "tooltip": "Remove HTML tag"
     },
-    // Wrap selection with HTML tag.
     {
       "alignment": "left",
       "color": "#D8A657",
       "command": "extension.htmlTagWrap",
-      "filterLanguageId": "html|javascriptreact",
+      "filterLanguageId": "html|javascriptreact|markdown",
       "id": "htmlwrap",
       "name": "HTML Tag Wrap (Extension)",
-      "priority": -8,
-      "text": "$(tag)",
-      "tooltip": "Wraps selection in HTML tags"
+      "priority": -9,
+      "text": "$(add)$(code)",
+      "tooltip": "Wraps selection in HTML tag"
     }
   ]
 }
@@ -238,13 +242,22 @@ Or move it to panel view.
 
 ---
 
-### 📦 **Dummy Text Generator** (gurayyarar.dummytextgenerator):
+### 📦 ~~**Dummy Text Generator** (gurayyarar.dummytextgenerator)~~ VSCode has Emmet for this:
 
 ---
 
 ### 📦 **Toggler** (hideoo.toggler):
 
 **Settings:**
+
+<details>
+<summary>settings.json</summary>
+
+```json
+{ "toggler.toggles": [["let", "const"]] }
+```
+
+</details>
 
 <details>
 <summary>keybindings.json</summary>
@@ -322,7 +335,7 @@ Or move it to panel view.
 
 ---
 
-### 📦 🤌 (Recommend) **Vietnamese - Code Spell Checker** (streetsidesoftware.code-spell-checker-vietnamese):
+### 📦 ~~🤌 (Recommend) **Vietnamese - Code Spell Checker** (streetsidesoftware.code-spell-checker-vietnamese)~~ Doesn't necessary:
 
 ---
 
@@ -528,7 +541,8 @@ Or move it to panel view.
 
 > 💅: Highly recommend.
 
-> 👎: Sometimes it doesn't work.
+> 👎: Sometimes it doesn't work. (Update: You should select content including the
+> bracket "{}")
 
 **Settings:**
 
@@ -595,7 +609,7 @@ Or move it to panel view.
 
 ---
 
-### 📦 **Incrementor** (nmsmith89.incrementor):
+### 📦 ~~**Incrementor** (nmsmith89.incrementor)~~ VSCode has built-in commands for this:
 
 > 💅: Highly recommend.
 
@@ -604,77 +618,39 @@ Or move it to panel view.
 **Settings:**
 
 <details>
-<summary>settings.json</summary>
-
-```json
-{
-  "incrementor.enums.values": [
-    ["false", "true"],
-    ["let", "const"],
-    ["public", "private", "protected"],
-    ["top", "bottom"],
-    ["left", "right"],
-    ["relative", "absolute"],
-    ["true", "false"],
-    ["flex-start", "flex-end", "center"]
-  ]
-}
-```
-
-</details>
-
-<details>
 <summary>keybindings.json</summary>
 
 ```json
 [
   {
     "key": "ctrl+;",
-    "command": "incrementor.decrementByOne"
-  },
-  {
-    "key": "ctrl+down",
-    "command": "-incrementor.decrementByOne"
+    "command": "editor.emmet.action.decrementNumberByOne",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+'",
-    "command": "incrementor.incrementByOne"
-  },
-  {
-    "key": "ctrl+up",
-    "command": "-incrementor.incrementByOne"
+    "command": "editor.emmet.action.incrementNumberByOne",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+alt+;",
-    "command": "incrementor.decrementByTen"
-  },
-  {
-    "key": "ctrl+shift+down",
-    "command": "-incrementor.decrementByTen"
+    "command": "editor.emmet.action.decrementNumberByTen",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+alt+'",
-    "command": "incrementor.incrementByTen"
-  },
-  {
-    "key": "ctrl+shift+up",
-    "command": "-incrementor.incrementByTen"
+    "command": "editor.emmet.action.incrementNumberByTen",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+shift+alt+;",
-    "command": "incrementor.decrementByTenth"
-  },
-  {
-    "key": "ctrl+shift+alt+down",
-    "command": "-incrementor.decrementByTenth"
+    "command": "editor.emmet.action.decrementNumberByOneTenth",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+shift+alt+'",
-    "command": "incrementor.incrementByTenth"
-  },
-  {
-    "key": "ctrl+shift+alt+up",
-    "command": "-incrementor.incrementByTenth"
+    "command": "editor.emmet.action.incrementNumberByOneTenth",
+    "when": "editorTextFocus"
   }
 ]
 ```
@@ -692,7 +668,7 @@ Or move it to panel view.
 
 ---
 
-### 📦 🤌 (Recommend) **Subword Navigation** (ow.vscode-subword-navigation):
+### 📦 ~~🤌 (Recommend) **Subword Navigation** (ow.vscode-subword-navigation)~~ VSCode has built-in commands for this:
 
 **Keyboard shortcut:**
 
@@ -718,11 +694,11 @@ code --install-extension bierner.docs-view
 code --install-extension bmalehorn.print-it
 code --install-extension bradgashler.htmltagwrap
 code --install-extension chunsen.bracket-select
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
-code --install-extension gurayyarar.dummytextgenerator
 code --install-extension hideoo.toggler
 code --install-extension kaiwood.center-editor-window
 code --install-extension kisstkondoros.vscode-gutter-preview
@@ -738,8 +714,6 @@ code --install-extension ms-vscode.cpptools
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension natqe.reload
 code --install-extension naumovs.color-highlight
-code --install-extension nmsmith89.incrementor
-code --install-extension ow.vscode-subword-navigation
 code --install-extension patbenatar.advanced-new-file
 code --install-extension pflannery.vscode-versionlens
 code --install-extension pustelto.bracketeer
@@ -750,7 +724,6 @@ code --install-extension sburg.vscode-javascript-booster
 code --install-extension softwaredotcom.swdc-vscode
 code --install-extension stkb.rewrap
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension streetsidesoftware.code-spell-checker-vietnamese
 code --install-extension tomoki1207.pdf
 code --install-extension usernamehw.errorlens
 code --install-extension usernamehw.indent-one-space
@@ -762,6 +735,17 @@ code --install-extension wmaurer.change-case
 code --install-extension xyz.local-history
 code --install-extension zengxingxin.sort-js-object-keys
 ```
+
+</details>
+
+<details>
+<summary>Command to get all extensions</summary>
+
+```powershell
+code --list-extensions | % { "code --install-extension $_" }
+```
+
+Ref: [link](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
 
 </details>
 

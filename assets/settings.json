@@ -70,18 +70,6 @@
   // htmltagwrap Extension
   "htmltagwrap.tag": "div",
   //
-  // Incrementor Extension
-  "incrementor.enums.values": [
-    ["false", "true"],
-    ["let", "const"],
-    ["public", "private", "protected"],
-    ["top", "bottom"],
-    ["left", "right"],
-    ["relative", "absolute"],
-    ["true", "false"],
-    ["flex-start", "flex-end", "center"]
-  ],
-  //
   // Indent one space Extension
   "indentOneSpace.onlyCompleteRange": true,
   //
@@ -106,7 +94,7 @@
     "jupyter-notebook": "left"
   },
   "notebook.lineNumbers": "on",
-  "prettier.endOfLine": "crlf",
+  "prettier.endOfLine": "auto",
   // Rewrap Extension
   "rewrap.autoWrap.enabled": true,
   "rewrap.autoWrap.notification": "text",
@@ -121,7 +109,7 @@
       "id": "reset-zoom",
       "name": "Reset Font Zoom",
       "priority": -1,
-      "text": "$(debug-restart)",
+      "text": "$(refresh)",
       "tooltip": "Resest font zoom"
     },
     {
@@ -161,39 +149,50 @@
       "id": "sort-object-keys",
       "name": "Sort JS object keys (Extension)",
       "priority": -5,
-      "text": "$(arrow-down)",
+      "text": "$(arrow-down)$(json)",
       "tooltip": "Sort JS object keys (ascending)"
     },
     {
       "alignment": "left",
       "color": "#7DAEA3",
-      "command": "extension.changeCase.commands",
-      "id": "change-case",
-      "name": "Change Case (Extension)",
+      "command": "editor.action.sortLinesAscending",
+      "id": "sort-line-ascending",
+      "name": "Sort Lines Ascending",
       "priority": -6,
-      "text": "$(case-sensitive)",
-      "tooltip": "Quickly change the case of the current selection or current word"
+      "text": "$(arrow-down)$(list-selection)",
+      "tooltip": "Sort Lines Ascending"
     },
     {
       "alignment": "left",
       "color": "#EA6962",
-      "command": "editor.emmet.action.removeTag",
-      "id": "remove-tag",
-      "name": "Remove Tag (Emmet)",
+      "command": "extension.changeCase.commands",
+      "id": "change-case",
+      "name": "Change Case (Extension)",
       "priority": -7,
-      "text": "$(trash)",
+      "text": "$(wand)$(text-size)",
+      "tooltip": "Quickly change the case of the current selection or current word"
+    },
+    {
+      "alignment": "left",
+      "color": "#E78A4E",
+      "command": "editor.emmet.action.removeTag",
+      "filterLanguageId": "html|javascriptreact|markdown",
+      "id": "remove-tag",
+      "name": "Remove HTML Tag (Emmet)",
+      "priority": -8,
+      "text": "$(trash)$(code)",
       "tooltip": "Remove HTML tag"
     },
     {
       "alignment": "left",
       "color": "#D8A657",
       "command": "extension.htmlTagWrap",
-      "filterLanguageId": "html|javascriptreact",
+      "filterLanguageId": "html|javascriptreact|markdown",
       "id": "htmlwrap",
       "name": "HTML Tag Wrap (Extension)",
-      "priority": -8,
-      "text": "$(tag)",
-      "tooltip": "Wraps selection in HTML tags"
+      "priority": -9,
+      "text": "$(add)$(code)",
+      "tooltip": "Wraps selection in HTML tag"
     }
   ],
   //
@@ -263,6 +262,9 @@
       "text": "TODO:"
     }
   ],
+  //
+  // Toggler Extension
+  "toggler.toggles": [["let", "const"]],
   //
   "typescript.autoClosingTags": true,
   // WindiCSS IntelliSense Extension
