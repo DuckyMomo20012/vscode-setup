@@ -1,6 +1,6 @@
 # My VSCode setup
 
-> NOTE: You should check [my keybinding settings](/assets/keybindings.json).
+> NOTE: You can check [my keybinding settings](/assets/keybindings.json).
 
 ## 1. Featured extension list:
 
@@ -11,7 +11,7 @@
 
 > 👎: Sometimes, it can conflict with intellisense.
 
-**Keyboard shortcut:** `Tab`
+**Keyboard shortcut:** <kbd>Tab</kbd>
 
 ---
 
@@ -131,6 +131,17 @@
       "priority": -9,
       "text": "$(add)$(code)",
       "tooltip": "Wraps selection in HTML tag"
+    },
+    {
+      "alignment": "left",
+      "color": "#A9B665",
+      "command": "editor.emmet.action.splitJoinTag",
+      "filterLanguageId": "html|javascriptreact|markdown",
+      "id": "split-join-tag",
+      "name": "Split/Join HTML Tag (Emmet)",
+      "priority": -10,
+      "text": "$(merge)$(code)",
+      "tooltip": "Split/Join HTML tag"
     }
   ]
 }
@@ -158,7 +169,7 @@ Or move it to panel view.
 
 ### 📦 🤌 (Recommend) **Print It** (bmalehorn.print-it):
 
-**Keyboard shortcut:** `Alt+[`
+**Keyboard shortcut:** <kbd>Alt+[</kbd>
 
 ---
 
@@ -203,7 +214,7 @@ Or move it to panel view.
 
 </details>
 
-**Keyboard shortcut:** `Alt+/`
+**Keyboard shortcut:** <kbd>Alt+/</kbd>
 
 ---
 
@@ -215,9 +226,9 @@ Or move it to panel view.
 
 **Keyboard shortcut:**
 
-- Select inside bracket: `Alt+A`.
-- Undo select bracket: `Alt+Z`.
-- Select include bracket: `Ctrl+Alt+A`.
+- Select inside bracket: <kbd>Alt+A</kbd>.
+- Undo select bracket: <kbd>Alt+Z</kbd>.
+- Select include bracket: <kbd>Ctrl+Alt+A</kbd>.
 
 ---
 
@@ -231,7 +242,7 @@ Or move it to panel view.
 
 ### 📦 🤌 (Recommend) **Prettier** (esbenp.prettier-vscode):
 
-**Keyboard shortcut:** `Shift+Alt+F`
+**Keyboard shortcut:** <kbd>Shift+Alt+F</kbd>
 
 ---
 
@@ -279,7 +290,7 @@ Or move it to panel view.
 
 </details>
 
-**Keyboard shortcut:** `Alt+\`
+**Keyboard shortcut:** <kbd>Alt+\</kbd>
 
 ---
 
@@ -302,7 +313,7 @@ Or move it to panel view.
 
 </details>
 
-**Keyboard shortcut:** `Ctrl+L`
+**Keyboard shortcut:** <kbd>Ctrl+L</kbd>
 
 ---
 
@@ -378,8 +389,8 @@ Or move it to panel view.
 
 **Keyboard shortcut:**
 
-- Indent one space: `Space`
-- Reverse indent one space: `Shift+Space`
+- Indent one space: <kbd>Space</kbd>
+- Reverse indent one space: <kbd>Shift+Space</kbd>
 
 ---
 
@@ -606,10 +617,10 @@ Or move it to panel view.
 
 **Keyboard shortcut:**
 
-- `Alt+'`: Swap quotes.
-- `Alt+;`: Swap brackets.
-- `Shift+Alt+'`: Remove quotes.
-- `Shift+Alt+;`: Remove brackets.
+- <kbd>Alt+'</kbd> : Swap quotes.
+- <kbd>Alt+;</kbd> : Swap brackets.
+- <kbd>Shift+Alt+'</kbd> : Remove quotes.
+- <kbd>Shift+Alt+;</kbd> : Remove brackets.
 
 ---
 
@@ -675,12 +686,12 @@ Or move it to panel view.
 
 **Keyboard shortcut:**
 
-- `Ctrl+'`: Increase by 1.
-- `Ctrl+;`: Decrease by 1.
-- `Ctrl+Alt+'`: Increase by 10.
-- `Ctrl+Alt+;`: Decrease by 10.
-- `Ctrl+Shift+Alt+'`: Increase by 0.1.
-- `Ctrl+Shift+Alt+;`: Decrease by 0.1.
+- <kbd>Ctrl+'</kbd> : Increase by 1.
+- <kbd>Ctrl+;</kbd> : Decrease by 1.
+- <kbd>Ctrl+Alt+'</kbd> : Increase by 10.
+- <kbd>Ctrl+Alt+;</kbd> : Decrease by 10.
+- <kbd>Ctrl+Shift+Alt+'</kbd> : Increase by 0.1.
+- <kbd>Ctrl+Shift+Alt+;</kbd> : Decrease by 0.1.
 
 ---
 
@@ -688,12 +699,12 @@ Or move it to panel view.
 
 **Keyboard shortcut:**
 
-- `Alt+➡️`: Cursor Subword Right
-- `Shift+Alt+➡️`: Cursor Subword Right Select
-- `Alt+⬅️`: Cursor Subword Left
-- `Shift+Alt+⬅️`: Cursor Subword Left Select
-- `Alt+Backspace`: Delete Subword Left
-- `Alt+Delete`: Delete Subword Right
+- <kbd>Alt+➡️</kbd> : Cursor Subword Right
+- <kbd>Shift+Alt+➡️</kbd> : Cursor Subword Right Select
+- <kbd>Alt+⬅️</kbd> : Cursor Subword Left
+- <kbd>Shift+Alt+⬅️</kbd> : Cursor Subword Left Select
+- <kbd>Alt+Backspace</kbd> : Delete Subword Left
+- <kbd>Alt+Delete</kbd> : Delete Subword Right
 
 ## 2. All extensions:
 
@@ -733,6 +744,7 @@ code --install-extension naumovs.color-highlight
 code --install-extension patbenatar.advanced-new-file
 code --install-extension pflannery.vscode-versionlens
 code --install-extension pustelto.bracketeer
+code --install-extension redhat.vscode-xml
 code --install-extension ritwickdey.live-sass
 code --install-extension ritwickdey.LiveServer
 code --install-extension sainnhe.gruvbox-material

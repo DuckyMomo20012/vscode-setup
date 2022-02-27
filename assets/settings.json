@@ -16,11 +16,15 @@
     "editor.tabSize": 2
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python" // "editor.tabSize": 4
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
   },
   // Code Spell Checker Extension
   "cSpell.enableFiletypes": ["!dockercompose"],
-  "cSpell.language": "en,vi",
+  "cSpell.language": "en",
   "cSpell.userWords": ["jsonify", "Vinh"],
   //
   "editor.bracketPairColorization.enabled": true,
@@ -33,7 +37,7 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": "JetBrains Mono",
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "editor.guides.bracketPairs": "active",
   "editor.insertSpaces": true,
@@ -94,7 +98,7 @@
     "jupyter-notebook": "left"
   },
   "notebook.lineNumbers": "on",
-  "prettier.endOfLine": "auto",
+  "redhat.telemetry.enabled": false,
   // Rewrap Extension
   "rewrap.autoWrap.enabled": true,
   "rewrap.autoWrap.notification": "text",
@@ -193,6 +197,17 @@
       "priority": -9,
       "text": "$(add)$(code)",
       "tooltip": "Wraps selection in HTML tag"
+    },
+    {
+      "alignment": "left",
+      "color": "#A9B665",
+      "command": "editor.emmet.action.splitJoinTag",
+      "filterLanguageId": "html|javascriptreact|markdown",
+      "id": "split-join-tag",
+      "name": "Split/Join HTML Tag (Emmet)",
+      "priority": -10,
+      "text": "$(merge)$(code)",
+      "tooltip": "Split/Join HTML tag"
     }
   ],
   //
@@ -269,7 +284,6 @@
   "typescript.autoClosingTags": true,
   // WindiCSS IntelliSense Extension
   "windicss.enableCodeFolding": true,
-  // "windicss.foldCount": 10,
   "windicss.foldByLength": true,
   "windicss.foldLength": 80,
   //
