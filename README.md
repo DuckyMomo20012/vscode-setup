@@ -24,7 +24,7 @@
 ### 📦 **statusbar-commands** (anweber.statusbar-commands):
 
 > 💅: My favorite extension, I don't have to combine keybindings
-> `Ctrl+Shift+P` to execute commands.
+> <kbd>Ctrl+Shift+P</kbd> to execute commands.
 
 > 👎: Icon and text is not center aligned.
 
@@ -290,7 +290,7 @@ Or move it to panel view.
 
 </details>
 
-**Keyboard shortcut:** <kbd>Alt+\</kbd>
+**Keyboard shortcut:** <kbd>Alt+\ </kbd>
 
 ---
 
