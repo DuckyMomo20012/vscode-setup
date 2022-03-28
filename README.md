@@ -722,6 +722,7 @@ code --install-extension bmalehorn.print-it
 code --install-extension bradgashler.htmltagwrap
 code --install-extension chunsen.bracket-select
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension Domi.dbux-code
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension esbenp.prettier-vscode
@@ -729,7 +730,6 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension hideoo.toggler
 code --install-extension kaiwood.center-editor-window
 code --install-extension kisstkondoros.vscode-gutter-preview
-code --install-extension miguelsolorio.fluent-icons
 code --install-extension mikestead.dotenv
 code --install-extension mongodb.mongodb-vscode
 code --install-extension ms-python.python
@@ -737,6 +737,8 @@ code --install-extension ms-python.vscode-pylance
 code --install-extension ms-toolsai.jupyter
 code --install-extension ms-toolsai.jupyter-keymap
 code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension natqe.reload
@@ -745,10 +747,7 @@ code --install-extension patbenatar.advanced-new-file
 code --install-extension pflannery.vscode-versionlens
 code --install-extension pustelto.bracketeer
 code --install-extension redhat.vscode-xml
-code --install-extension ritwickdey.live-sass
-code --install-extension ritwickdey.LiveServer
 code --install-extension sainnhe.gruvbox-material
-code --install-extension sburg.vscode-javascript-booster
 code --install-extension softwaredotcom.swdc-vscode
 code --install-extension stkb.rewrap
 code --install-extension streetsidesoftware.code-spell-checker

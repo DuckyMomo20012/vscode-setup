@@ -1,4 +1,8 @@
 {
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 2
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
@@ -22,6 +26,7 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
+  "C_Cpp.clang_format_style": "LLVM",
   // Code Spell Checker Extension
   "cSpell.enableFiletypes": ["!dockercompose"],
   "cSpell.language": "en",
@@ -29,6 +34,7 @@
   //
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
     "source.sortImports": true
   },
   "editor.cursorSmoothCaretAnimation": true,
@@ -81,9 +87,11 @@
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "javascript.preferences.jsxAttributeCompletionStyle": "auto",
+  "javascript.preferences.quoteStyle": "double",
   "javascript.suggest.autoImports": true,
   "javascript.suggest.paths": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": true,
   //
   "jupyter.askForKernelRestart": false,
   "liveshare.launcherClient": "visualStudioCode",
@@ -99,6 +107,12 @@
   },
   "notebook.lineNumbers": "on",
   "redhat.telemetry.enabled": false,
+  "remote.SSH.remotePlatform": {
+    "192.168.80.129": "linux",
+    "192.168.202.128": "linux",
+    "192.168.73.128": "linux",
+    "127.0.0.1": "linux"
+  },
   // Rewrap Extension
   "rewrap.autoWrap.enabled": true,
   "rewrap.autoWrap.notification": "text",
@@ -212,6 +226,8 @@
   ],
   //
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.shellIntegration.decorationsEnabled": true,
+  "terminal.integrated.shellIntegration.enabled": true,
   // TODO Highlight Extension
   "todohighlight.defaultStyle": {
     "backgroundColor": "#7DAEA3",
@@ -275,6 +291,12 @@
       "color": "black",
       "overviewRulerColor": "#EA6962",
       "text": "TODO:"
+    },
+    {
+      "backgroundColor": "#7DAEA3",
+      "color": "black",
+      "overviewRulerColor": "#7DAEA3",
+      "text": "REVIEW:"
     }
   ],
   //
@@ -298,12 +320,14 @@
     }
   },
   "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.editor.historyBasedLanguageDetection": true,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.experimental.layoutControl.enabled": true,
+  "workbench.experimental.layoutControl.type": "both",
   "workbench.iconTheme": "vscode-icons",
   "workbench.list.smoothScrolling": true,
-  "workbench.productIconTheme": "fluent-icons"
+  "extensions.ignoreRecommendations": true
 }
