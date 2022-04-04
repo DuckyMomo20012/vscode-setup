@@ -58,6 +58,7 @@
   "editor.suggestSelection": "first",
   "editor.wordWrap": "on",
   "explorer.experimental.fileNesting.enabled": true,
+  "extensions.ignoreRecommendations": true,
   // "editor.linkedEditing": true
   // "javascript.inlayHints.parameterNames.enabled": "all",
   // "typescript.inlayHints.parameterNames.enabled": "all",
@@ -107,12 +108,6 @@
   },
   "notebook.lineNumbers": "on",
   "redhat.telemetry.enabled": false,
-  "remote.SSH.remotePlatform": {
-    "192.168.80.129": "linux",
-    "192.168.202.128": "linux",
-    "192.168.73.128": "linux",
-    "127.0.0.1": "linux"
-  },
   // Rewrap Extension
   "rewrap.autoWrap.enabled": true,
   "rewrap.autoWrap.notification": "text",
@@ -325,9 +320,10 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.experimental.layoutControl.enabled": true,
-  "workbench.experimental.layoutControl.type": "both",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.layoutControl.enabled": true,
+  "workbench.layoutControl.type": "both",
   "workbench.list.smoothScrolling": true,
-  "extensions.ignoreRecommendations": true
+  "workbench.localHistory.maxFileEntries": 10,
+  "workbench.localHistory.mergeWindow": 60
 }
