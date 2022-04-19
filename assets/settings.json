@@ -35,7 +35,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.sortImports": true
+    "source.sortImports": false
   },
   "editor.cursorSmoothCaretAnimation": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -95,7 +95,6 @@
   "javascript.validate.enable": true,
   //
   "jupyter.askForKernelRestart": false,
-  "liveshare.launcherClient": "visualStudioCode",
   // Local History Extension
   "local-history.dateLocale": "vi-VN",
   "local-history.daysLimit": 1,
@@ -303,6 +302,7 @@
   "windicss.enableCodeFolding": true,
   "windicss.foldByLength": true,
   "windicss.foldLength": 80,
+  // "windicss.sortOnSave": true,
   //
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
