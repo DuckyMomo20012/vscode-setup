@@ -23,15 +23,12 @@
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
   },
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
   "C_Cpp.clang_format_style": "LLVM",
   // Code Spell Checker Extension
   "cSpell.enableFiletypes": ["!dockercompose"],
   "cSpell.language": "en",
-  "cSpell.userWords": ["jsonify", "Vinh"],
   //
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
@@ -46,6 +43,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
   "editor.mouseWheelZoom": true,
   "editor.quickSuggestions": {
@@ -57,21 +55,17 @@
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
   "editor.wordWrap": "on",
-  "explorer.experimental.fileNesting.enabled": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": true,
   "extensions.ignoreRecommendations": true,
   // "editor.linkedEditing": true
   // "javascript.inlayHints.parameterNames.enabled": "all",
   // "typescript.inlayHints.parameterNames.enabled": "all",
-  "files.autoSave": "onFocusChange",
+  // "files.autoSave": "onWindowChange",
   "files.eol": "\r\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
-  // Gruvbox Material Extension
-  "gruvboxMaterial.darkContrast": "soft",
-  "gruvboxMaterial.darkSelection": "purple",
-  "gruvboxMaterial.darkWorkbench": "flat",
-  //
   // Highlight Matching Tag
   "highlight-matching-tag.highlightSelfClosing": true,
   "highlight-matching-tag.showPath": false,
@@ -80,9 +74,6 @@
   "html.format.endWithNewline": true,
   // htmltagwrap Extension
   "htmltagwrap.tag": "div",
-  //
-  // Indent one space Extension
-  "indentOneSpace.onlyCompleteRange": true,
   //
   "javascript.autoClosingTags": true,
   "javascript.preferences.importModuleSpecifier": "relative",
@@ -93,20 +84,13 @@
   "javascript.suggest.paths": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": true,
-  //
-  "jupyter.askForKernelRestart": false,
-  // Local History Extension
-  "local-history.dateLocale": "vi-VN",
-  "local-history.daysLimit": 1,
-  "local-history.maxDisplay": 10,
-  "local-history.saveDelay": 600,
-  //
+  "markdown.experimental.editor.pasteLinks.enabled": true,
+  "markdown.experimental.validate.enabled": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
   "notebook.lineNumbers": "on",
-  "redhat.telemetry.enabled": false,
   // Rewrap Extension
   "rewrap.autoWrap.enabled": true,
   "rewrap.autoWrap.notification": "text",
@@ -116,17 +100,17 @@
   "statusbar_command.commands": [
     {
       "alignment": "left",
-      "color": "#EA6962",
+      "color": "#E66533",
       "command": "editor.action.fontZoomReset",
       "id": "reset-zoom",
       "name": "Reset Font Zoom",
       "priority": -1,
       "text": "$(refresh)",
-      "tooltip": "Resest font zoom"
+      "tooltip": "Reset font zoom"
     },
     {
       "alignment": "left",
-      "color": "#E78A4E",
+      "color": "#49E9A6",
       "command": "workbench.action.openSettingsJson",
       "id": "open-settings",
       "name": "Open settings.json",
@@ -136,7 +120,7 @@
     },
     {
       "alignment": "left",
-      "color": "#D8A657",
+      "color": "#E4B781",
       "command": "workbench.action.toggleSplitEditorInGroup",
       "id": "split-group",
       "name": "Split (Group)",
@@ -146,17 +130,7 @@
     },
     {
       "alignment": "left",
-      "color": "#A9B665",
-      "command": "center-editor-window.center",
-      "id": "better-align",
-      "name": "Center Editor Window (Extension)",
-      "priority": -4,
-      "text": "$(fold)",
-      "tooltip": "Centers your editor window at the current cursor position"
-    },
-    {
-      "alignment": "left",
-      "color": "#89B482",
+      "color": "#49ACE9",
       "command": "sortJsObjectKeys.sortJsObjectKeys",
       "id": "sort-object-keys",
       "name": "Sort JS object keys (Extension)",
@@ -166,7 +140,7 @@
     },
     {
       "alignment": "left",
-      "color": "#7DAEA3",
+      "color": "#DF769B",
       "command": "editor.action.sortLinesAscending",
       "id": "sort-line-ascending",
       "name": "Sort Lines Ascending",
@@ -176,17 +150,7 @@
     },
     {
       "alignment": "left",
-      "color": "#EA6962",
-      "command": "extension.changeCase.commands",
-      "id": "change-case",
-      "name": "Change Case (Extension)",
-      "priority": -7,
-      "text": "$(wand)$(text-size)",
-      "tooltip": "Quickly change the case of the current selection or current word"
-    },
-    {
-      "alignment": "left",
-      "color": "#E78A4E",
+      "color": "#49D6E9",
       "command": "editor.emmet.action.removeTag",
       "filterLanguageId": "html|javascriptreact|markdown",
       "id": "remove-tag",
@@ -197,7 +161,7 @@
     },
     {
       "alignment": "left",
-      "color": "#D8A657",
+      "color": "#E66533",
       "command": "extension.htmlTagWrap",
       "filterLanguageId": "html|javascriptreact|markdown",
       "id": "htmlwrap",
@@ -208,7 +172,7 @@
     },
     {
       "alignment": "left",
-      "color": "#A9B665",
+      "color": "#49E9A6",
       "command": "editor.emmet.action.splitJoinTag",
       "filterLanguageId": "html|javascriptreact|markdown",
       "id": "split-join-tag",
@@ -218,10 +182,12 @@
       "tooltip": "Split/Join HTML tag"
     }
   ],
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
   //
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.shellIntegration.decorationsEnabled": true,
-  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.enabled": false,
   // TODO Highlight Extension
   "todohighlight.defaultStyle": {
     "backgroundColor": "#7DAEA3",
@@ -229,10 +195,9 @@
       "contentText": "",
       "fontStyle": "normal"
     },
-    "border": "1px solid #A9B665",
     "borderRadius": "5px",
     "color": "black",
-    "cursor": "pointer",
+    "cursor": "auto",
     "isWholeLine": false,
     "overviewRulerColor": "#7DAEA3"
   },
@@ -258,72 +223,58 @@
     "**/*.css",
     "**/*.scss"
   ],
-  "todohighlight.isCaseSensitive": true,
+  "todohighlight.isCaseSensitive": false,
   "todohighlight.isEnable": true,
   "todohighlight.keywords": [
-    "WORKING:",
     {
-      "backgroundColor": "#E78A4E",
+      "backgroundColor": "#E66533",
       "color": "black",
-      "overviewRulerColor": "#E78A4E",
+      "overviewRulerColor": "#E66533",
       "text": "BUG:"
     },
     {
-      "backgroundColor": "#A9B665",
+      "backgroundColor": "#DF769B",
       "color": "black",
-      "overviewRulerColor": "#A9B665",
-      "text": "DONE:"
+      "overviewRulerColor": "#DF769B",
+      "text": "FIXME:"
     },
     {
-      "backgroundColor": "#D8A657",
+      "backgroundColor": "#E4B781",
       "color": "black",
-      "overviewRulerColor": "#D8A657",
+      "overviewRulerColor": "#E4B781",
       "text": "NOTE:"
     },
     {
-      "backgroundColor": "#EA6962",
+      "backgroundColor": "#49E9A6",
       "color": "black",
-      "overviewRulerColor": "#EA6962",
+      "overviewRulerColor": "#49E9A6",
       "text": "TODO:"
     },
     {
-      "backgroundColor": "#7DAEA3",
+      "backgroundColor": "#49ACE9",
       "color": "black",
-      "overviewRulerColor": "#7DAEA3",
+      "overviewRulerColor": "#49ACE9",
       "text": "REVIEW:"
     }
   ],
   //
-  // Toggler Extension
-  "toggler.toggles": [["let", "const"]],
-  //
   "typescript.autoClosingTags": true,
   // WindiCSS IntelliSense Extension
-  "windicss.enableCodeFolding": true,
+  "windicss.enableCodeFolding": false,
   "windicss.foldByLength": true,
   "windicss.foldLength": 80,
-  // "windicss.sortOnSave": true,
   //
   "window.dialogStyle": "custom",
+  "window.experimental.commandCenter": true,
+  "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
-  "workbench.colorCustomizations": {
-    "[Gruvbox Material Dark]": {
-      "editorLineNumber.activeForeground": "#D3869B",
-      "statusBarItem.remoteBackground": "#D3869B",
-      "statusBarItem.remoteForeground": "#242424",
-      "tab.activeBorderTop": "#D3869B"
-    }
-  },
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.colorTheme": "Noctis Uva",
   "workbench.editor.historyBasedLanguageDetection": true,
   "workbench.editor.scrollToSwitchTabs": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
   "workbench.iconTheme": "vscode-icons",
   "workbench.layoutControl.enabled": true,
   "workbench.layoutControl.type": "both",
   "workbench.list.smoothScrolling": true,
-  "workbench.localHistory.maxFileEntries": 10,
+  "workbench.localHistory.maxFileEntries": 50,
   "workbench.localHistory.mergeWindow": 60
 }
