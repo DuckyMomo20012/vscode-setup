@@ -20,6 +20,9 @@
     "editor.tabSize": 2
   },
   "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
   },
@@ -39,39 +42,40 @@
   "editor.detectIndentation": false,
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": "JetBrains Mono",
-  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "editor.formatOnType": false,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
+  "editor.linkedEditing": true,
   "editor.mouseWheelZoom": true,
   "editor.quickSuggestions": {
     "strings": true
   },
   "editor.renderLineHighlight": "gutter",
   "editor.smoothScrolling": true,
-  "editor.suggest.insertMode": "replace",
+  "editor.stickyScroll.enabled": true,
+  "editor.suggest.insertMode": "insert",
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
   "editor.wordWrap": "on",
+  "eslint.workingDirectories": ["./app", "./web"],
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": true,
   "extensions.ignoreRecommendations": true,
-  // "editor.linkedEditing": true
   // "javascript.inlayHints.parameterNames.enabled": "all",
   // "typescript.inlayHints.parameterNames.enabled": "all",
-  // "files.autoSave": "onWindowChange",
   "files.eol": "\r\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
+  "github.copilot.enable": {
+    "*": true
+  },
   // Highlight Matching Tag
   "highlight-matching-tag.highlightSelfClosing": true,
   "highlight-matching-tag.showPath": false,
   //
   "html.autoClosingTags": true,
-  "html.format.endWithNewline": true,
   // htmltagwrap Extension
   "htmltagwrap.tag": "div",
   //
@@ -85,12 +89,17 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": true,
   "markdown.experimental.editor.pasteLinks.enabled": true,
+  "markdown.experimental.updateLinksOnFileMove.enabled": "always",
   "markdown.experimental.validate.enabled": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
   "notebook.lineNumbers": "on",
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.sortImports.args": ["--profile", "black"],
   // Rewrap Extension
   "rewrap.autoWrap.enabled": true,
   "rewrap.autoWrap.notification": "text",
@@ -182,12 +191,13 @@
       "tooltip": "Split/Join HTML tag"
     }
   ],
+  //
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
-  //
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "terminal.integrated.shellIntegration.decorationsEnabled": true,
-  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "both",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.smoothScrolling": true,
   // TODO Highlight Extension
   "todohighlight.defaultStyle": {
     "backgroundColor": "#7DAEA3",
@@ -197,7 +207,7 @@
     },
     "borderRadius": "5px",
     "color": "black",
-    "cursor": "auto",
+    "cursor": "text",
     "isWholeLine": false,
     "overviewRulerColor": "#7DAEA3"
   },
@@ -213,19 +223,10 @@
     "**/*.map",
     "**/.next/**"
   ],
-  "todohighlight.include": [
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.html",
-    "**/*.php",
-    "**/*.css",
-    "**/*.scss"
-  ],
-  "todohighlight.isCaseSensitive": false,
+  "todohighlight.isCaseSensitive": true,
   "todohighlight.isEnable": true,
   "todohighlight.keywords": [
+    "DONE:",
     {
       "backgroundColor": "#E66533",
       "color": "black",
@@ -263,9 +264,9 @@
   "windicss.enableCodeFolding": false,
   "windicss.foldByLength": true,
   "windicss.foldLength": 80,
+  "window.commandCenter": true,
   //
   "window.dialogStyle": "custom",
-  "window.experimental.commandCenter": true,
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
   "workbench.colorTheme": "Noctis Uva",

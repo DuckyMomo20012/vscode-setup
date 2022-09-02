@@ -75,11 +75,17 @@ code --install-extension zengxingxin.sort-js-object-keys
 <details>
 <summary>Command to get all extensions</summary>
 
+Unix:
+
+```bash
+code --list-extensions | xargs -L 1 echo code --install-extension
+```
+
+Windows (PowerShell, e. g. using Visual Studio Code's integrated Terminal):
+
 ```powershell
 code --list-extensions | % { "code --install-extension $_" }
 ```
-
-Ref: [link](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
 
 </details>
 
