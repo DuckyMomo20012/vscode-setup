@@ -58,18 +58,17 @@
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
   "editor.wordWrap": "on",
-  "eslint.workingDirectories": ["./app", "./web"],
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": true,
   "extensions.ignoreRecommendations": true,
-  // "javascript.inlayHints.parameterNames.enabled": "all",
-  // "typescript.inlayHints.parameterNames.enabled": "all",
-  "files.eol": "\r\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "yaml": false
   },
   // Highlight Matching Tag
   "highlight-matching-tag.highlightSelfClosing": true,
@@ -81,21 +80,21 @@
   //
   "javascript.autoClosingTags": true,
   "javascript.preferences.importModuleSpecifier": "relative",
-  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "javascript.preferences.importModuleSpecifierEnding": "index",
   "javascript.preferences.jsxAttributeCompletionStyle": "auto",
   "javascript.preferences.quoteStyle": "double",
   "javascript.suggest.autoImports": true,
   "javascript.suggest.paths": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": true,
-  "markdown.experimental.editor.pasteLinks.enabled": true,
-  "markdown.experimental.updateLinksOnFileMove.enabled": "always",
-  "markdown.experimental.validate.enabled": true,
+  "markdown.updateLinksOnFileMove.enabled": "always",
+  "markdown.validate.enabled": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
   "notebook.lineNumbers": "on",
+  "prettier.proseWrap": "always",
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
@@ -109,7 +108,7 @@
   "statusbar_command.commands": [
     {
       "alignment": "left",
-      "color": "#E66533",
+      "color": "#EA76CB",
       "command": "editor.action.fontZoomReset",
       "id": "reset-zoom",
       "name": "Reset Font Zoom",
@@ -119,7 +118,7 @@
     },
     {
       "alignment": "left",
-      "color": "#49E9A6",
+      "color": "#E64553",
       "command": "workbench.action.openSettingsJson",
       "id": "open-settings",
       "name": "Open settings.json",
@@ -129,7 +128,7 @@
     },
     {
       "alignment": "left",
-      "color": "#E4B781",
+      "color": "#FE640B",
       "command": "workbench.action.toggleSplitEditorInGroup",
       "id": "split-group",
       "name": "Split (Group)",
@@ -139,7 +138,7 @@
     },
     {
       "alignment": "left",
-      "color": "#49ACE9",
+      "color": "#DF8E1D",
       "command": "sortJsObjectKeys.sortJsObjectKeys",
       "id": "sort-object-keys",
       "name": "Sort JS object keys (Extension)",
@@ -149,7 +148,7 @@
     },
     {
       "alignment": "left",
-      "color": "#DF769B",
+      "color": "#179299",
       "command": "editor.action.sortLinesAscending",
       "id": "sort-line-ascending",
       "name": "Sort Lines Ascending",
@@ -159,7 +158,7 @@
     },
     {
       "alignment": "left",
-      "color": "#49D6E9",
+      "color": "#04A5E5",
       "command": "editor.emmet.action.removeTag",
       "filterLanguageId": "html|javascriptreact|markdown",
       "id": "remove-tag",
@@ -170,7 +169,7 @@
     },
     {
       "alignment": "left",
-      "color": "#E66533",
+      "color": "#1E66F5",
       "command": "extension.htmlTagWrap",
       "filterLanguageId": "html|javascriptreact|markdown",
       "id": "htmlwrap",
@@ -181,7 +180,7 @@
     },
     {
       "alignment": "left",
-      "color": "#49E9A6",
+      "color": "#7287FD",
       "command": "editor.emmet.action.splitJoinTag",
       "filterLanguageId": "html|javascriptreact|markdown",
       "id": "split-join-tag",
@@ -260,16 +259,18 @@
   ],
   //
   "typescript.autoClosingTags": true,
+  "vsicons.dontShowNewVersionMessage": true,
   // WindiCSS IntelliSense Extension
   "windicss.enableCodeFolding": false,
   "windicss.foldByLength": true,
   "windicss.foldLength": 80,
-  "window.commandCenter": true,
+  "windicss.sortOnSave": false,
   //
+  "window.commandCenter": true,
   "window.dialogStyle": "custom",
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Noctis Uva",
+  "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.editor.historyBasedLanguageDetection": true,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.iconTheme": "vscode-icons",
