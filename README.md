@@ -156,6 +156,10 @@
         <td><a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons"><h3>vscode-icons</h3></a>Icons for Visual Studio Code</td>
     </tr>
     <tr>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-twoslash-queries"><img src="https://orta.gallerycdn.vsassets.io/extensions/orta/vscode-twoslash-queries/1.1.0/1664004290360/Microsoft.VisualStudio.Services.Icons.Default" alt="vscode-twoslash-queries" width="100"></a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime"><h3>vscode-twoslash-queries</h3></a>Adds support for twoslash queries into typescript projects</td>
+    </tr>
+    <tr>
         <td><a href="https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime"><img src="https://wakatime.gallerycdn.vsassets.io/extensions/wakatime/vscode-wakatime/22.1.0/1670498633906/Microsoft.VisualStudio.Services.Icons.Default" alt="WakaTime" width="100"></a></td>
         <td><a href="https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime"><h3>WakaTime</h3></a>Metrics, insights, and time tracking automatically generated from your programming activity.</td>
     </tr>
