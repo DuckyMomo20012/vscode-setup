@@ -223,5 +223,5 @@ code --list-extensions | % { "code --install-extension $_" }
 
 # :toolbox: Configuration files:
 
-- [⚙️ settings.json](/assets/settings.json)
-- [⌨️ keybindings.json](/assets/keybindings.json)
+- [⚙️ settings.json](/settings.json)
+- [⌨ keybindings.json](/keybindings.json)

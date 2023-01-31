@@ -26,6 +26,9 @@
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
   },
+  "[xml]": {
+    "editor.defaultFormatter": null
+  },
   "C_Cpp.clang_format_style": "LLVM",
   // Code Spell Checker Extension
   "cSpell.enableFiletypes": ["!dockercompose"],
