@@ -230,3 +230,4 @@ code --list-extensions | % { "code --install-extension $_" }
 - [⚙️ settings.json](/settings.json)
 - [⌨ keybindings.json](/keybindings.json)
 - [📝 snippets](/snippets)
+- [:shipit: profiles](/profiles)
