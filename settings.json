@@ -40,7 +40,7 @@
     "source.fixAll.eslint": true,
     "source.sortImports": false
   },
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.fontFamily": "JetBrains Mono",
@@ -101,7 +101,7 @@
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
-  "python.sortImports.args": ["--profile", "black"],
+  "isort.args": ["--profile", "black"],
   // Rewrap Extension
   "rewrap.autoWrap.enabled": true,
   "rewrap.autoWrap.notification": "text",
