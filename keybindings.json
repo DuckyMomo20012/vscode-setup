@@ -32,13 +32,9 @@
   },
   {
     "key": "alt+/",
-    "command": "extension.htmlTagWrap",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+w",
-    "command": "-extension.htmlTagWrap",
-    "when": "editorTextFocus"
+    "command": "editor.action.insertSnippet",
+    "when": "editorHasSelection && editorTextFocus",
+    "args": { "name": "HTML Tag Wrap" }
   },
   {
     "key": "alt+'",
@@ -57,16 +53,6 @@
   {
     "key": "ctrl+shift+alt+k",
     "command": "-bracketeer.swapBrackets"
-  },
-  {
-    "key": "alt+\\",
-    "command": "extension.toggle",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+r",
-    "command": "-extension.toggle",
-    "when": "editorTextFocus"
   },
   {
     "key": "shift+alt+;",

@@ -68,19 +68,13 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "github.copilot.enable": {
-    "*": true,
-    "markdown": true,
-    "plaintext": false,
-    "yaml": false
+    "*": true
   },
   // Highlight Matching Tag
   "highlight-matching-tag.highlightSelfClosing": true,
   "highlight-matching-tag.showPath": false,
   //
   "html.autoClosingTags": true,
-  // htmltagwrap Extension
-  "htmltagwrap.tag": "div",
-  //
   "javascript.autoClosingTags": true,
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.importModuleSpecifierEnding": "index",
@@ -163,7 +157,7 @@
       "alignment": "left",
       "color": "#04A5E5",
       "command": "editor.emmet.action.removeTag",
-      "filterLanguageId": "html|javascriptreact|markdown",
+      "filterLanguageId": "html|javascriptreact|typescriptreact|markdown",
       "id": "remove-tag",
       "name": "Remove HTML Tag (Emmet)",
       "priority": -8,
@@ -174,7 +168,7 @@
       "alignment": "left",
       "color": "#1E66F5",
       "command": "extension.htmlTagWrap",
-      "filterLanguageId": "html|javascriptreact|markdown",
+      "filterLanguageId": "html|javascriptreact|typescriptreact|markdown",
       "id": "htmlwrap",
       "name": "HTML Tag Wrap (Extension)",
       "priority": -9,
@@ -185,7 +179,7 @@
       "alignment": "left",
       "color": "#7287FD",
       "command": "editor.emmet.action.splitJoinTag",
-      "filterLanguageId": "html|javascriptreact|markdown",
+      "filterLanguageId": "html|javascriptreact|typescriptreact|markdown",
       "id": "split-join-tag",
       "name": "Split/Join HTML Tag (Emmet)",
       "priority": -10,
