@@ -68,7 +68,10 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
   },
   // Highlight Matching Tag
   "highlight-matching-tag.highlightSelfClosing": true,
