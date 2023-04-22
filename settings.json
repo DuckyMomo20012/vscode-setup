@@ -23,8 +23,9 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.tabSize": 4
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
   },
   "[xml]": {
     "editor.defaultFormatter": null
@@ -95,7 +96,7 @@
   },
   "notebook.lineNumbers": "on",
   "prettier.proseWrap": "always",
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
   "isort.args": ["--profile", "black"],
