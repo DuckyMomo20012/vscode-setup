@@ -47,6 +47,7 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [Extensions list](#package-extensions-list)
+- [Profiles](#computer-profiles)
 - [Configuration files](#toolbox-configuration-files)
 
 <!-- Extensions list -->
@@ -223,9 +224,28 @@ code --list-extensions | % { "code --install-extension $_" }
 
 </details>
 
+<!-- Profiles -->
+
+# :computer: Profiles
+
+## Python
+
+- Additional extensions:
+
+  - [Flake8](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8).
+  - [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort).
+  - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance).
+  - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+
+## Web
+
+- Additional extensions:
+
+  - [WindiCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense).
+
 <!-- Configuration files -->
 
-# :toolbox: Configuration files:
+# :toolbox: Configuration files
 
 - [:gear: settings.json](/settings.json)
 - [:keyboard: keybindings.json](/keybindings.json)
